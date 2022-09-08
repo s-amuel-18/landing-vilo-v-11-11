@@ -1,0 +1,9 @@
+.btn-outline-light-transparent {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.back-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
