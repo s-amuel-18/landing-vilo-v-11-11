@@ -352,11 +352,11 @@
                     <!-- ? imgs -->
                     <div class="col-md-6">
                         <div class="p-3 shadow-lg-custom br-40">
-                            <h4 class="text-white text-uppercase font-weight-light letter-spacing-7 mb-3">
+                            <h5 class="text-white pl-4 text-uppercase font-weight-light letter-spacing-7 mb-3">
                                 incluye
-                            </h4>
+                            </h5>
 
-                            <ul class="text-white pl-3 h5 font-weight-light">
+                            <ul class="text-white pl-5 h5 font-weight-light">
                                 <li class="mb-3">Impuestos</li>
                                 <li class="mb-3">Boletos ida y vuelta</li>
                                 <li class="mb-3">Planillas de salud</li>
@@ -367,21 +367,86 @@
                         </div>
                     </div>
                     <!-- ? imgs emd -->
-
+                    <!-- FORMULARIO -->
                     <div class="col-12 py-5 ">
-                        <div class="text-center text-white">+
-                            <!-- !
- 
-      !                         _____ ___  ____  __  __ _   _ _        _    ____  ___ ___  
-       !                       |  ___/ _ \|  _ \|  \/  | | | | |      / \  |  _ \|_ _/ _ \ 
-        !                      | |_ | | | | |_) | |\/| | | | | |     / _ \ | |_) || | | | |
-         !                     |  _|| |_| |  _ <| |  | | |_| | |___ / ___ \|  _ < | | |_| |
-          !                    |_|   \___/|_| \_\_|  |_|\___/|_____/_/   \_\_| \_\___\___/ 
-                                                                                          
- 
-!-->
-                            <h1>AQUI VA EL FORMULARIO</h1>
-
+                        <div class="text-center text-white">
+                            <div class="w-100 d-flex justify-content-center">
+                                <div class="pt-5 w-75">
+                                    <h5 class="px-3 py-3 text-white font-weight-normal text-center text-uppercase letter-spacing-7">Personaliza tu experiencia</h5>
+                                    <form class="border-form p-4 d-flex flex-column justify-content-center">
+                                        <div class="form-group" >
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="Radios1" value="option1" checked>
+                                                <label class="form-check-label mx-1" for="Radios1">
+                                                Ida y vuelta
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="Radios2" value="option2">
+                                                <label class="form-check-label mx-1" for="Radios2">
+                                                Sólo ida
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row text-center justify-content-center">
+                                            <label for="origin" class="col-sm-1  text-white col-form-label">Origen</label>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control-plaintext text-secondary bg-input-form" id="origin" placeholder="Aeropuerto de origen">
+                                            </div>
+                                            <label for="destiny" class="col-sm-1  text-white col-form-label">Destino</label>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control-plaintext text-secondary bg-input-form" id="destiny" placeholder="Aeropuerto de llegada">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row text-center justify-content-center">
+                                            <label for="first-date" class="col-sm-1  text-white col-form-label">Partida</label>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control-plaintext text-secondary bg-input-form" id="first-date" value=" ">
+                                            </div>
+                                            <label for="second-date" class="col-sm-1  text-white col-form-label">Llegada</label>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control-plaintext text-secondary bg-input-form" id="second-date" value=" ">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row text-center justify-content-center">
+                                            <label for="adults" class="col-sm-1  text-white col-form-label">Adultos</label>
+                                            <div class="col-md-3">
+                                                <input type="number" class="form-control-plaintext text-secondary bg-input-form" id="adults" placeholder=" 1">
+                                            </div>
+                                            <label for="second-date" class="col-sm-1  text-white col-form-label">Niños</label>
+                                            <div class="col-md-3">
+                                                <input type="number" class="form-control-plaintext text-secondary bg-input-form" id="second-date" placeholder=" 0">
+                                            </div>
+                                            <label for="second-date" class="col-sm-1  text-white col-form-label">Infantes</label>
+                                            <div class="col-md-3">
+                                                <input type="number" class="form-control-plaintext text-secondary bg-input-form" id="second-date" placeholder=" 0">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row text-center">
+                                            <label for="adults" class="col-sm-1  text-white col-form-label ">Clase</label>
+                                            <select name="clase" id="clase" class="col-lg-10 bg-input-form text-white border-0">
+                                                <option value="economic">Clase Económica</option>
+                                                <option value="first-class">Primera Clase</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group text-center w-100 justify-content-end d-flex">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="Radios1" value="option1" checked>
+                                                <label class="form-check-label mx-1" for="Radios1">
+                                                USD
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="Radios2" value="option2">
+                                                <label class="form-check-label mx-1" for="Radios2">
+                                                BsS
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-warning button-orange text-uppercase">buscar</button>
+                                        </div>
+                                    </form>
+                                </div>  
+                            </div>
                         </div>
                     </div>
 
@@ -452,20 +517,86 @@
                     </div>
                     <!-- ? imgs emd -->
 
+                    <!-- FORMULARIO -->
                     <div class="col-12 py-5 ">
-                        <div class="text-center text-white">+
-                            <!-- !
- 
-      !                         _____ ___  ____  __  __ _   _ _        _    ____  ___ ___  
-       !                       |  ___/ _ \|  _ \|  \/  | | | | |      / \  |  _ \|_ _/ _ \ 
-        !                      | |_ | | | | |_) | |\/| | | | | |     / _ \ | |_) || | | | |
-         !                     |  _|| |_| |  _ <| |  | | |_| | |___ / ___ \|  _ < | | |_| |
-          !                    |_|   \___/|_| \_\_|  |_|\___/|_____/_/   \_\_| \_\___\___/ 
-                                                                                          
- 
-!-->
-                            <h1>AQUI VA EL FORMULARIO</h1>
-
+                        <div class="text-center text-white">
+                            <div class="w-100 d-flex justify-content-center">
+                                <div class="pt-5 w-75">
+                                    <h5 class="px-3 py-3 text-white font-weight-normal text-center text-uppercase letter-spacing-7">Personaliza tu experiencia</h5>
+                                    <form class="border-form p-4 d-flex flex-column justify-content-center">
+                                        <div class="form-group justify-content-between" >
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="Radios1" value="option1" checked>
+                                                <label class="form-check-label mx-1" for="Radios1">
+                                                Ida y vuelta
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="Radios2" value="option2">
+                                                <label class="form-check-label mx-1" for="Radios2">
+                                                Sólo ida
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row text-center justify-content-center">
+                                            <label for="origin" class="col-sm-1  text-white col-form-label">Origen</label>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control-plaintext text-secondary bg-input-form" id="origin" placeholder="Aeropuerto de origen">
+                                            </div>
+                                            <label for="destiny" class="col-sm-1  text-white col-form-label">Destino</label>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control-plaintext text-secondary bg-input-form" id="destiny" placeholder="Aeropuerto de llegada">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row text-center justify-content-center">
+                                            <label for="first-date" class="col-sm-1  text-white col-form-label">Partida</label>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control-plaintext text-secondary bg-input-form" id="first-date" value=" ">
+                                            </div>
+                                            <label for="second-date" class="col-sm-1  text-white col-form-label">Llegada</label>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control-plaintext text-secondary bg-input-form" id="second-date" value=" ">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row text-center justify-content-center">
+                                            <label for="adults" class="col-sm-1  text-white col-form-label">Adultos</label>
+                                            <div class="col-md-3">
+                                                <input type="number" class="form-control-plaintext text-secondary bg-input-form" id="adults" placeholder=" 1">
+                                            </div>
+                                            <label for="second-date" class="col-sm-1  text-white col-form-label">Niños</label>
+                                            <div class="col-md-3">
+                                                <input type="number" class="form-control-plaintext text-secondary bg-input-form" id="second-date" placeholder=" 0">
+                                            </div>
+                                            <label for="second-date" class="col-sm-1  text-white col-form-label">Infantes</label>
+                                            <div class="col-md-3">
+                                                <input type="number" class="form-control-plaintext text-secondary bg-input-form" id="second-date" placeholder=" 0">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row text-center">
+                                            <label for="adults" class="col-sm-1  text-white col-form-label ">Clase</label>
+                                            <select name="clase" id="clase" class="col-lg-10 bg-input-form text-white border-0">
+                                                <option value="economic">Clase Económica</option>
+                                                <option value="first-class">Primera Clase</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group text-center w-100 justify-content-end d-flex">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="Radios1" value="option1" checked>
+                                                <label class="form-check-label mx-1" for="Radios1">
+                                                USD
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="Radios2" value="option2">
+                                                <label class="form-check-label mx-1" for="Radios2">
+                                                BsS
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-warning button-orange text-uppercase">buscar</button>
+                                        </div>
+                                    </form>
+                                </div>  
+                            </div>
                         </div>
                     </div>
 
