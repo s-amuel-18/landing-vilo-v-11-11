@@ -77,3 +77,67 @@
 .modal_dialog_custom {
   margin: 0 0 0 auto;
 }
+
+.select-hotel-form {
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.absolute-select-hotel {
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.332);
+}
+
+.text-hotel-select {
+  transition: all 0.5s;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.input_hotel:checked~.select-hotel-form {
+  transform: scale(1.1);
+  border: 1px solid rgb(211, 169, 1);
+}
+
+.input_hotel:checked~.select-hotel-form>.absolute-select-hotel {
+  background-color: transparent;
+}
+
+.input_hotel:checked~.select-hotel-form>.absolute-select-hotel>.text-hotel-select {
+  background-color: hsla(22, 95%, 23%, 0.757);
+}
+
+.btn_number_input {
+  padding: 0px !important;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_custom {
+  border: 1px solid #2b336a;
+  background-color: #2b336a;
+  color: #cecece;
+}
+
+.input_custom:focus {
+  background-color: #2b336a;
+  color: #ffffff;
+}
+
+.btn-blue {
+  background-color: #2b336a;
+  color: #ffffff;
+
+}

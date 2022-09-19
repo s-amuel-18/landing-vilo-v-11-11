@@ -315,10 +315,100 @@
         aria-labelledby="modal_form" aria-hidden="true">
         <div class="modal-dialog modal_dialog_custom" role="document">
             <div class="modal-content bg-modal">
-                <div class="modal-body ">
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet nesciunt
-                        dicta porro, repellendus reprehenderit quisquam odit necessitatibus sed quaerat cumque repellat
-                        nemo magni dolorem. Quos, quo eius. Ab, ipsam voluptatem?</p>
+                <div class="modal-body p-3">
+                    <form action="">
+                        <h6 class="text-white">Elige tu hospedaje</h6>
+                        <div class="row no-gutters justify-content-start mb-3">
+                            <div class="col-3 p-2">
+                                <input type="radio" name="hotel" class="input_hotel d-none" id="hotel_1">
+                                <label for="hotel_1" class="select-hotel-form position-relative">
+                                    <img class="img-fluid" src="./assets/images/form-modal/Hotel 1.png" alt="">
+
+                                    <div class="absolute-select-hotel position-absolute d-flex align-items-end">
+                                        <div class="text-white text-center text-hotel-select w-100">
+                                            Hotel
+                                        </div>
+
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-3 p-2">
+                                <input type="radio" name="hotel" class="input_hotel d-none" id="hotel_2" checked>
+                                <label for="hotel_2" class="selected select-hotel-form position-relative">
+                                    <img class="img-fluid" src="./assets/images/form-modal/Hotel 2.png" alt="">
+
+                                    <div class="absolute-select-hotel position-absolute d-flex align-items-end">
+                                        <div class="text-white text-center text-hotel-select w-100">
+                                            Hotel
+                                        </div>
+
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-3 p-2">
+                                <input type="radio" name="hotel" class="input_hotel d-none" id="hotel_3">
+                                <label for="hotel_3" class="select-hotel-form position-relative">
+                                    <img class="img-fluid" src="./assets/images/form-modal/Hotel 3.png" alt="">
+
+                                    <div class="absolute-select-hotel position-absolute d-flex align-items-end">
+                                        <div class="text-white text-center text-hotel-select w-100">
+                                            Hotel
+                                        </div>
+
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <label for="" class="text-white">Cantidad de paquetes</label>
+
+                            <!-- * input number -->
+                            <div class="form-group">
+                                <div class="d-flex">
+                                    <div class="">
+                                        <input type="number" class="form-control form-control-sm input_custom"
+                                            style="width: 100px;">
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn btn-warning mx-2 btn_number_input btn-sm"
+                                            type="button">+</button>
+                                        <button class="btn btn-warning btn_number_input btn-sm" type="button">-</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- * select metodo de pago -->
+                            <div class="form-group">
+                                <label for="" class="text-white">Metodos de pago</label>
+                                <select class="input_custom form-control form-control-sm" name="" id="">
+                                    <option value="">Divisas</option>
+                                    <option value="">Bolivares</option>
+                                </select>
+                            </div>
+
+                            <!-- * tus vuelos -->
+                            <div class="form-group">
+                                <label for="vuelos" class="text-white">Tus vuelos</label>
+                                <input id="vuelos" class="input_custom form-control form-control-sm" type="text" name=""
+                                    placeholder="Promo Mérida - Hotel **** - 1 paquete - Divisas">
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <div class="px-2">
+                                    <button class="btn btn-blue btn-sm" type="button">Cancelar</button>
+                                </div>
+                                <div class="px-2">
+                                    <button disabled class="btn btn-oranger btn-sm" type="button">Agregar otro</button>
+                                </div>
+                                <div class="px-2">
+                                    <button class="btn btn-oranger btn-sm" type="button">Pagat en whatsapp</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
