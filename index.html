@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- ? fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ? fontawesome -->
+
     <!-- ? bootstrap -->
     <link rel="stylesheet" href="./assets/lib/bootstrap-4/css/bootstrap.min.css">
     <!-- ? bootstrap end  -->
@@ -234,37 +240,37 @@
 
                         <!-- * letras miami -->
                         <div class="col-md-6">
-                            <img class="img-fluid" src="./assets/images/Merida/letters.png" alt="">
+                            <img class="img-fluid" src="./assets/images/Merida/letters.png" alt=""
+                                style="max-height: 150px;">
 
                             <div class="">
                                 <p class="text-white">
-                                <p class="text-white">
                                     - Traslados Aeropuerto El Vigia / Hotel o Posada Seleccionada / Aeropuerto El Vigia.
                                 </p>
-                                <br>
+
                                 <p class="text-white">
                                     - 2 Noches de alojamiento en hotel seleccionado.
                                 </p>
-                                <br>
+
                                 <p class="text-white">
                                     - Desayunos diarios.
                                 </p>
-                                <br>
+
                                 <p class="text-white">
                                     - Full Day a los maravillosos pueblos del paramo, visita la Laguna de Mucubaji,
                                     Collado del Candor, Pico el Aguila, iglesia de piedra Juan Felix Sanchez, Monumento
                                     al perro Nevado y Loca Luz Caraballo, con almuerzo y refrigerio incluido.
                                 </p>
-                                <br>
+
                                 <p class="text-white">
                                     -1 Helado andino por persona en la famosa Heladeria Coromoto ganadora del Record
                                     Guinnes (sujeta a cambios por disponibilidad de horarios).
                                 </p>
-                                <br>
+
                                 <p class="text-white">
                                     -1 Bufanda artesanal por persona.
                                 </p>
-                                </p>
+
                             </div>
                         </div>
                         <!-- * letras miami end -->
@@ -282,11 +288,7 @@
                         </div>
                         <!-- * btns -->
                     </div>
-                    <div class="py-4" style="height: 10%;">
-                        <div class="text-center text-white">
-                            Lorem, ipsum dolor.
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -297,14 +299,14 @@
         <div class="container">
             <div class="row text-white">
                 <div class="col-md-3 col-6 offset-md-6">
-                    <h5>Lorem, ipsum dolor.</h5>
-                    <div class="">Lorem, ipsum dolor.</div>
-                    <div class="">Lorem, ipsum dolor.</div>
+                    <h5>Contáctanos</h5>
+                    <div class="">info@viajesllonces.com</div>
+                    <div class="">+58 212 451 6943</div>
                 </div>
                 <div class="col-md-3 col-6">
-                    <h5>Lorem, ipsum dolor.</h5>
-                    <div class="">Lorem, ipsum dolor.</div>
-                    <div class="">Lorem, ipsum dolor.</div>
+                    <h5>Horario</h5>
+                    <div class="">lunes a viernes 8:00am - 16:00pm</div>
+                    <div class="">sábados 9:00am - 15:00pm</div>
 
                 </div>
             </div>
@@ -315,11 +317,11 @@
         aria-labelledby="modal_form" aria-hidden="true">
         <div class="modal-dialog modal_dialog_custom" role="document">
             <div class="modal-content bg-modal">
-                <div class="modal-body p-3">
+                <div class="modal-body p-4">
                     <form action="">
                         <h6 class="text-white">Elige tu hospedaje</h6>
                         <div class="row no-gutters justify-content-start mb-3">
-                            <div class="col-3 p-2">
+                            <div class="col-md-3 col-4 p-2">
                                 <input type="radio" name="hotel" class="input_hotel d-none" id="hotel_1">
                                 <label for="hotel_1" class="select-hotel-form position-relative">
                                     <img class="img-fluid" src="./assets/images/form-modal/Hotel 1.png" alt="">
@@ -332,7 +334,7 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="col-3 p-2">
+                            <div class="col-md-3 col-4 p-2">
                                 <input type="radio" name="hotel" class="input_hotel d-none" id="hotel_2" checked>
                                 <label for="hotel_2" class="selected select-hotel-form position-relative">
                                     <img class="img-fluid" src="./assets/images/form-modal/Hotel 2.png" alt="">
@@ -345,7 +347,7 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="col-3 p-2">
+                            <div class="col-md-3 col-4 p-2">
                                 <input type="radio" name="hotel" class="input_hotel d-none" id="hotel_3">
                                 <label for="hotel_3" class="select-hotel-form position-relative">
                                     <img class="img-fluid" src="./assets/images/form-modal/Hotel 3.png" alt="">
@@ -367,13 +369,19 @@
                             <div class="form-group">
                                 <div class="d-flex">
                                     <div class="">
-                                        <input type="number" class="form-control form-control-sm input_custom"
-                                            style="width: 100px;">
+                                        <input id="input_trips" type="number"
+                                            class="form-control form-control-sm input_custom" style="width: 100px;"
+                                            value="0" min="1">
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <button class="btn btn-warning mx-2 btn_number_input btn-sm"
-                                            type="button">+</button>
-                                        <button class="btn btn-warning btn_number_input btn-sm" type="button">-</button>
+                                        <button onclick="sum_number(this)" data-target="#input_trips"
+                                            class="btn btn-warning mx-2 btn_number_input btn-sm" type="button">
+                                            <i class="fa fa-plus" style="font-size: 12px;"></i>
+                                        </button>
+                                        <button onclick="sub_number(this)" data-target="#input_trips"
+                                            class="btn btn-warning btn_number_input btn-sm" type="button">
+                                            <i class="fa fa-minus" style="font-size: 12px;"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -388,13 +396,13 @@
                             </div>
 
                             <!-- * tus vuelos -->
-                            <div class="form-group">
+                            <div class="form-group ">
                                 <label for="vuelos" class="text-white">Tus vuelos</label>
                                 <input id="vuelos" class="input_custom form-control form-control-sm" type="text" name=""
                                     placeholder="Promo Mérida - Hotel **** - 1 paquete - Divisas">
                             </div>
 
-                            <div class="d-flex justify-content-center">
+                            <div class="mt-4 d-flex justify-content-center">
                                 <div class="px-2">
                                     <button class="btn btn-blue btn-sm" type="button">Cancelar</button>
                                 </div>
@@ -421,6 +429,31 @@
         $(function () {
             $("#modal_form").modal("show");
         })
+    </script>
+
+    <script>
+        function sum_number(element) {
+            const input = document.querySelector(element.dataset.target);
+
+            if (!input) return false;
+
+            const value = Number(input.value);
+
+            let new_value = value + 1;
+            input.value = new_value;
+        }
+
+        function sub_number(element) {
+            const input = document.querySelector(element.dataset.target);
+
+            if (!input) return false;
+
+            const value = Number(input.value);
+
+            let new_value = value - 1;
+
+            input.value = value == 0 ? 0 : new_value;
+        }
     </script>
 
 </body>
