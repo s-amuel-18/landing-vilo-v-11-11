@@ -142,3 +142,25 @@
   color: #ffffff;
 
 }
+
+.item_carrousel {
+  bottom: auto;
+  top: calc(50% - 40px);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  /* background: #000; */
+  margin: 20px;
+}
+
+.carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  margin: 0 10px;
+  transition: all .5s;
+}
+
+.carousel-indicators li.active {
+  transform: scale(1.3);
+}
