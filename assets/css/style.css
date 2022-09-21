@@ -16,25 +16,24 @@
   border: 3px solid #fff;
 }
 
-
 .section_miami {
-  background-image: url(../images/miami/back.png);
+  background-image: url(../images/miami/back.jpg);
 }
 
 .section_roques {
-  background-image: url(../images/los_roques/back.png);
+  background-image: url(../images/los_roques/back.jpg);
 }
 
 .section_canaima {
-  background-image: url(../images/canaima/back.png);
+  background-image: url(../images/canaima/back.jpg);
 }
 
 .section_porlamar {
-  background-image: url(../images/Porlamar/back.png);
+  background-image: url(../images/Porlamar/back.jpg);
 }
 
 .section_merida {
-  background-image: url(../images/Merida/back.png);
+  background-image: url(../images/Merida/back.jpg);
 }
 
 .section_slide {
@@ -66,12 +65,14 @@
 }
 
 .bg-degra-dark {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.288) 70%, rgba(0, 0, 0, 0.592));
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.288) 70%,
+    rgba(0, 0, 0, 0.592)
+  );
 }
 
 .bg-modal {
   background-color: rgba(255, 255, 255, 0.218);
-
 }
 
 .modal_dialog_custom {
@@ -103,16 +104,19 @@
   background: rgba(0, 0, 0, 0.65);
 }
 
-.input_hotel:checked~.select-hotel-form {
+.input_hotel:checked ~ .select-hotel-form {
   transform: scale(1.1);
   border: 1px solid rgb(211, 169, 1);
 }
 
-.input_hotel:checked~.select-hotel-form>.absolute-select-hotel {
+.input_hotel:checked ~ .select-hotel-form > .absolute-select-hotel {
   background-color: transparent;
 }
 
-.input_hotel:checked~.select-hotel-form>.absolute-select-hotel>.text-hotel-select {
+.input_hotel:checked
+  ~ .select-hotel-form
+  > .absolute-select-hotel
+  > .text-hotel-select {
   background-color: hsla(22, 95%, 23%, 0.757);
 }
 
@@ -140,7 +144,6 @@
 .btn-blue {
   background-color: #2b336a;
   color: #ffffff;
-
 }
 
 .item_carrousel {
@@ -158,7 +161,7 @@
   height: 7px;
   border-radius: 100%;
   margin: 0 10px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .carousel-indicators li.active {
